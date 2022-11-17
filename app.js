@@ -7,7 +7,12 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+//to see heroku logs
+
+//heroku login
+//heroku logs --tail -a insta2nd
 var app = express()
+
 
 app.get("/",   (req, res) => {
     res.send('<h1> Hellow </h1>');
